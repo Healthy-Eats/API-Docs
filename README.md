@@ -207,3 +207,118 @@
       }
   }
   ```
+
+### Update Plan
+- Method
+
+  PUT
+
+- URL
+
+  /(plan id)/updatePlan
+
+- Headers
+
+  Key = Authorization
+  
+  Value = Bearer (token from login)
+
+- Body Request
+  ```json
+  {
+    "name": "bulking",
+    "goal": "increase body weight",
+    "activity": "Active",
+    "calories_target": 3500,
+    "calories_consume": 10
+  }
+  ```
+
+- Response
+  ```json
+  {
+      "status": "success",
+      "message": "Plan updated successfully"
+  }
+  ```
+
+### Delete Plan
+- Method
+
+  DELETE
+
+- URL
+
+  /(plan id)/deletePlan
+
+- Headers
+
+  Key = Authorization
+  
+  Value = Bearer (token from login)
+
+- Response
+  ```json
+  {
+      "status": "success",
+      "message": "Plan deleted successfully"
+  }
+  ```
+
+### Get History
+- Method
+
+  GET
+
+- URL
+
+  /getHistory
+
+- Headers
+
+  Key = Authorization
+  
+  Value = Bearer (token from login)
+
+- Response
+  ```json
+  {
+      "status": "success",
+      "message": "History read successfully",
+      "data": []
+  }
+  ```
+
+### Predicting Image
+- Method
+
+  POST
+
+- URL
+
+  /classifyImage
+
+- Headers
+
+  Key = Authorization
+  
+  Value = Bearer (token from login)
+
+- Body Request
+  ```form-data
+  Key = file File
+  
+  Value = Select Files (jpg/jpeg file)
+  ```
+
+- Response
+  ```json
+  {
+      "status": "success",
+      "message": "image predicted",
+      "foodName": "apple pie",
+      "foodCal": 237,
+      "foodImg": "https://storage.cloud.google.com/healthy-eats-bucket/images/apple_pie/apple_pie.png",
+      "predictedProb": 0.9663249850273132
+  }
+  ```
