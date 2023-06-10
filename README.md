@@ -15,6 +15,7 @@
     "pass": "password"
   }
   ```
+
 - Response
   ```json
   {
@@ -39,6 +40,7 @@
     "pass": "password"
   }
   ```
+
 - Response
   ```json
   {
@@ -79,5 +81,39 @@
         "user_height": null,
         "user_weight": null
     }
+  }
+  ```
+
+### Update User
+- Method
+
+  PUT
+
+- URL
+
+  /updateUser
+
+- Headers
+
+  Key = Authorization
+  
+  Value = Bearer <token from login>
+
+- Body Request
+  ```json
+  {
+    "name": "test",
+    "age": 21,
+    "gender": "MALE",
+    "height": 200,
+    "weight": 100
+  }
+  ```
+
+- Response
+  ```json
+  {
+      "status": "success",
+      "message": "update successful"
   }
   ```
