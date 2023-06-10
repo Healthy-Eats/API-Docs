@@ -117,3 +117,26 @@
       "message": "update successful"
   }
   ```
+
+### Delete User
+- Method
+
+  DELETE
+
+- URL
+
+  /deleteUser
+
+- Headers
+
+  Key = Authorization
+  
+  Value = Bearer (token from login)
+
+- Response
+  ```json
+  {
+      "status": "success",
+      "message": "Delete successful"
+  }
+  ```
