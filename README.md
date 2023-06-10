@@ -22,3 +22,30 @@
     "message": "User created successfully"
   }
   ```
+
+### Login
+- Method
+
+  POST
+
+- URL
+
+  /login
+
+- Body Request
+  ```json
+  {
+    "email": "test@email.com",
+    "pass": "password"
+  }
+  ```
+- Response
+  ```json
+  {
+    "status": "success",
+    "message": "login successful",
+    "data": {
+        "token": "<token>"
+    }
+  }
+  ```
