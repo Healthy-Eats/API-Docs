@@ -65,7 +65,7 @@
 
   Key = Authorization
   
-  Value = Bearer "<token from login>"
+  Value = Bearer (token from login)
 
 - Response
   ```json
@@ -73,7 +73,7 @@
     "status": "success",
     "message": "read successful",
     "data": {
-        "user_id": "<user id>",
+        "user_id": (user id),
         "user_name": "test",
         "user_email": "test@email.com",
         "user_age": null,
@@ -97,7 +97,7 @@
 
   Key = Authorization
   
-  Value = Bearer "<token from login>"
+  Value = Bearer (token from login)
 
 - Body Request
   ```json
