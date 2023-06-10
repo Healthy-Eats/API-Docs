@@ -140,3 +140,70 @@
       "message": "Delete successful"
   }
   ```
+
+### Create Plan
+- Method
+
+  POST
+
+- URL
+
+  /createPlan
+
+- Headers
+
+  Key = Authorization
+  
+  Value = Bearer (token from login)
+
+- Body Request
+  ```json
+  {
+    "name": "deficit calorie",
+    "goal": "decrease body weight",
+    "activity": "Active",
+    "calories_target": 1500
+  }
+  ```
+
+- Response
+  ```json
+  {
+      "status": "success",
+      "message": "Plan created successfully"
+  }
+  ```
+
+### Read Plan
+- Method
+
+  GET
+
+- URL
+
+  /readPlan
+
+- Headers
+
+  Key = Authorization
+  
+  Value = Bearer (token from login)
+
+- Response
+  ```json
+  {
+      "status": "success",
+      "message": "read successful",
+      "data": {
+          "plan": {
+              "plan_id": (plan id),
+              "plan_name": "deficit calorie",
+              "plan_goal": "decrease body weight",
+              "plan_activity": "Active",
+              "calories_target": 1500,
+              "calories_consume": 0,
+              "user_id": (user id)
+          }
+      }
+  }
+  ```
