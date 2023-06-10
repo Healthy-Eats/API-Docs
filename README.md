@@ -285,7 +285,7 @@
   {
       "status": "success",
       "message": "History read successfully",
-      "data": []
+      "data": [(captured image)]
   }
   ```
 
@@ -308,7 +308,7 @@
   ```form-data
   Key = file File
   
-  Value = Select Files (jpg/jpeg file)
+  Value = Select Files (.jpg/.jpeg file extension)
   ```
 
 - Response
@@ -318,7 +318,7 @@
       "message": "image predicted",
       "foodName": "apple pie",
       "foodCal": 237,
-      "foodImg": "https://storage.cloud.google.com/healthy-eats-bucket/images/apple_pie/apple_pie.png",
-      "predictedProb": 0.9663249850273132
+      "foodImg": "(image url)",
+      "predictedProb": (predicted probability type float)
   }
   ```
