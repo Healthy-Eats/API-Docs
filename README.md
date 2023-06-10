@@ -62,6 +62,7 @@
 - Headers
 
   Key = Authorization
+  
   Value = Bearer <token from login>
 
 - Response
