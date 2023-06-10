@@ -1,9 +1,11 @@
 ### Register
 - Method
-POST
+
+  POST
 
 - URL
-/register
+
+  /register
 
 - Body Request
   ```json
