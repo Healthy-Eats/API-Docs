@@ -215,7 +215,7 @@
 
 - URL
 
-  /(plan id)/updatePlan
+  /updatePlan
 
 - Headers
 
@@ -229,8 +229,7 @@
     "name": "bulking",
     "goal": "increase body weight",
     "activity": "Active",
-    "calories_target": 3500,
-    "calories_consume": 10
+    "calories_target": 3500
   }
   ```
 
@@ -249,7 +248,7 @@
 
 - URL
 
-  /(plan id)/deletePlan
+  /deletePlan
 
 - Headers
 
@@ -317,8 +316,12 @@
       "status": "success",
       "message": "image predicted",
       "foodName": "apple pie",
+      "foodPro": 2.63,
+      "foodCalc": 0.018,
+      "foodFat": 14.04,
+      "foodCarbo": 35.09,
+      "foodVit": 0,
       "foodCal": 237,
-      "foodImg": "(image url)",
       "predictedProb": (predicted probability type float)
   }
   ```
